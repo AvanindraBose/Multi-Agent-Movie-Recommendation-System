@@ -1,0 +1,34 @@
+DATABASE DESCRIPTION:
+
+movies
+- Contains basic MovieLens movie metadata
+- movieId is primary identifier
+- genres are pipe-separated categories (e.g. Comedy|Drama)
+
+ratings
+- Each row is a user's rating for a movie
+- rating ranges from 0.5 to 5.0
+- A movie's quality must be computed using AVG(rating)
+- Do NOT assume a precomputed rating column exists
+
+tags
+- User-generated descriptive labels
+- Important for recommendation filtering
+- Many users may tag same movie differently
+
+tmdb_info
+- Contains movie storyline information
+- overview used for semantic search
+- genres similar but more descriptive than MovieLens genres
+
+
+RELATIONSHIPS:
+
+ratings.movieId = movies.movieId
+tags.movieId = movies.movieId
+
+Important:
+To rank movies you MUST compute:
+AVG(ratings.rating)
+GROUP BY movieId
+ORDER BY AVG(rating) DESC
