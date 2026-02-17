@@ -42,6 +42,9 @@ STRICT RULES:
 - ALWAYS GROUP BY movieId
 - ORDER BY AVG(rating) DESC
 - LIMIT 5 results
+- Aggregates like AVG() must NEVER appear in WHERE
+- Use HAVING when filtering aggregated values
+
 
 Persona Preferences:
 Tags: {tags}
