@@ -282,29 +282,3 @@ Not just AI output — **AI decision making**.
 * Hybrid ranking scoring
 
 ---
-
-## 👨‍💻 Learning Outcomes
-
-By building this system you understand:
-
-* Why single-prompt RAG fails
-* How agents cooperate
-* How to ground LLMs with tools
-* How to design AI architecture (not just code)
-
----
-
-## ✨ Final Thought
-
-This project moves beyond:
-
-> *“Generate text”*
-
-to
-
-> **“Simulate reasoning.”**
-
-You did not build a chatbot.
-You built a cognitive system.
-
----
